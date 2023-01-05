@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>游戏基础机制</title>
+
+		<link rel="stylesheet" href="css/next.css" />
+		<style>
+			body {
+				width: 1300px;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div style="background-image: url(img/bg.jpg);width: 1300px;height: 2000px;">
+			<div class="menu">
+				<h1 class="logo"><span>游戏基础机制</span></h1>
+				<ul>
+
+					<li><a href="index.html">首页</a></li>
+				</ul>
+			</div>
+			<!-- 功能按钮 -->
+			<div style="position: relative;top: 160px;left: 70px;width: 1100px;">
+				<div id="content-frame">
+					<ul>
+						<li><a href="#属性简介">属性简介</a></li>
+						<li><a href="#复活机制">复活机制</a></li>
+						<li><a href="#三防的作用">三防的作用</a></li>
+						<li><a href="#装备成长玩法">装备成长玩法</a></li>
+						<li><a href="#游戏聊天机制">游戏聊天机制</a></li>
+						<li><a href="#吃药机制">吃药机制</a></li>
+						<li><a href="#团队机制">团队机制</a></li>
+						<li><a href="#门派系统">门派系统</a></li>
+						<li><a href="#检查玩法">检查玩法</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<!-- 内容 -->
+			<div style="width:1100px;
+					/* background-color: rgb(0, 112, 82,0.5); */
+					background-color: rgb(187, 189, 170);
+					position: relative;top: 150px;left: 100px;">
+<!-- shuxing -->
+				<div style="width: 1000px;padding-left: 30px;" >
+					<br>
+					<div id="guidance" >
+						<h3 id="属性简介"><span>1</span>属性简介</h3>
+						<div style="
+						background-color: rgb(243, 187, 219,0.5)" ;
+						
+						class="hu">
+								<p>速度=攻击速度</p>
+						 <p>恢复=受到伤害后下次可以出手的时间  </p>
+						 <p>躲闪、命中 </p>
+						 <p>活力=血量</p>
+						<p>内力=蓝量 </p>
+						 <p>攻击分为身/头/手/脚 防御分为身防/头防/手防/脚防  </p>
+						 <p>再生&nbsp;&nbsp;（影响自动回血的属性，每次被击倒可以获得成长） </p>
+						 <p>耐性&nbsp;&nbsp;（减伤属性，每次受到的攻击高于玩家生命25%时成长，满级99.99时可以得到减伤12%的效果，等级达到50.00可以正式开始减伤）</p>
+						</div>
+				</div>
+			</div>
+			<br>
+			<hr />
+			<!-- 2 -->
+			
+			<div style="width: 1000px;padding-left: 30px;" >
+					<br>
+					<div id="guidance" >
+						<h3 id="复活机制"><span>2</span>复活机制</h3>
+						<div class="hu" style="
+						/* background-color: rgb(0, 152, 152); */
+						background-color: rgb(243, 187, 219,0.5)" ;
+						width: 400px;" 
+						>
+						<p>身防对应活力值也就是传统意义的HP，而活力值为0则被击倒，25秒后起身，并根据再生恢复血量。</p>
+						<p>被击倒前服用的药品也可以生效，复活后并非满血，副本地图意外的地图是原地复活，
+						而在副本地图被击倒则会出现在副本外围
+								</p>
+								<p></p>
+					</div>
+				</div>	
+				</div>
+		
+		
+			<br>
+			<hr>
+			<!-- 3 -->
+			<div style="width: 1000px;padding-left: 30px;" >
+					<br>
+					<div id="guidance" >
+						<h3 id="三防的作用"><span>3</span>三防的作用</h3>
+						<div style="background-color: rgb(243, 187, 219,0.5)" ; 
+						class="hu">
+						<p>头防/手防/脚防</p>
+						<p> 同时对应三防血量</p>
+						<p>头防血量过低会使得玩家无法切换武功/手防血条过低时会影响玩家的攻击力/脚防过低时影响玩家的攻击速度</p>
+						<p> 三防血条低于50%开始有影响</p>
+				
+					<p></p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<hr>
+			<!-- 4 -->
+			<div style="width: 1000px;padding-left: 30px;" >
+					<br>
+					<div id="guidance" >
+						<h3 id="装备成长玩法"><span>4</span>装备成长玩法</h3>
+						<div style="background-color: rgb(243, 187, 219,0.5)" ;
+						class="hu">
+						
+						<p>除部分新手装备，所有装备均可以升段和鉴定</p>
+						<p>升段可以大幅增加基础属性增加值，但是恢复和速度属性无法受到升段的影响，属性增加幅度分别为25%/50%/100%/150%，成功概率为85%/50%/25%/10%，升段失败装备将消失，游戏内提供2种增加升段成功率的材料精华素/生死梦幻丹以及2种可以使装备保持不碎的道具冰玉/千年冰玉
+						</p>
+						<p>鉴定则根据鉴定部位不同属性不同，切鉴定的品质随机，一层版本可以不增加这种玩法，但由于玩法过于单一，建议添加。
+</p>
+
+						
+
+								<p></p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<hr>
+			<!-- 5 -->
+			<div style="width: 1000px;padding-left: 30px;" >
+					<br>
+					<div id="guidance" >
+						<h3 id="游戏聊天机制"><span>5</span>游戏聊天机制</h3>
+						<div style="background-color: rgb(243, 187, 219,0.5)" ;
+						class="hu">
+						<p>	玩家可以在附近/门派/同盟/副本/呐喊/纸条频道进行发言，其中较为特殊的机制为呐喊频道
+					</p>
+						<p>当玩家年龄达到30.00并且活力值高于50.00时可以呐喊，每次消耗50%的当前活力值，并且根据活力和内力的加值有多个呐喊级别，纸条需要输入@纸条 XXXX 命令调出
+							</p>
+							<p></p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<hr>
+			<!-- 6 -->
+			<div style="width: 1000px;padding-left: 30px;" >
+					<br>
+					<div id="guidance" >
+						<h3 id="吃药机制"><span>6</span>吃药机制</h3>
+						<div style="background-color: rgb(243, 187, 219,0.5)" ;
+						class="hu">
+						<p>玩家10秒内同时可使用3个药物，可以是不同种类，但将进入无法使用药物的时间.
+						</p>
+						<p>根据使用药的时间依次进入cd状态，所以在紧张的pk时要合理安排吃药的顺序
+						</p>
+								<p></p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<hr>
+			<!-- 7 -->
+			<div style="width: 1000px;padding-left: 30px;" >
+					<br>
+					<div id="guidance" >
+						<h3 id="团队机制"><span>7</span>团队机制</h3>
+						<div style="background-color: rgb(243, 187, 219,0.5)" ;
+						class="hu">
+						<p>通过团队修改按钮可以快捷设置团队，也可以使用@设定团队加团队数值来设定.
+						</p>
+						<p>可设置的团队为100-9999，正是因为这个机制，千年玩家可以快速的整合团队，从而实现超大规模的团队作战
+						</p>
+								<p></p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<hr>
+			<!-- 8 -->
+			<div style="width: 1000px;padding-left: 30px;" >
+					<br>
+					<div id="guidance" >
+						<h3 id="门派系统"><span>8</span>门派系统</h3>
+						<div style="background-color: rgb(243, 187, 219,0.5)" ;
+						class="hu">
+						<p>门派是千年游戏的核心玩法，门派可以结盟增加影响力，门主可以自定义门派武功
+								</p>
+								<p></p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<hr>
+			<!-- 9 -->
+			<div style="width: 1000px;padding-left: 30px;" >
+					<br>
+					<div id="guidance" >
+						<h3 id="探查玩法"><span>9</span>探查玩法</h3>
+						<div style="background-color: rgb(243, 187, 219,0.5)" ;
+						class="hu">
+						<p>玩家之间可以使用@探查 xxx 来获取其他玩家的位置，玩家通常使用这种手段来获取敌对玩家的信息，从而决定接下来的举动</p>
+								<p></p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<hr>
+			
+			
+
+		</div>
+
+	</body>
+</html>

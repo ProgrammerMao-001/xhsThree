@@ -1,0 +1,81 @@
+* {
+	padding: 0%;
+	margin: 0%;
+}
+
+.wrap {
+	background-image: url(../img/bg.jpg);
+	width: 1300px;
+	height: 2000px;
+}
+
+ul li {
+	list-style: none;
+	padding-left: 40px;
+	float: left;
+	color: black;
+}
+
+.one {
+	padding: 0%;
+}
+
+.clearFix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+div {
+	padding-top: 0%;
+	padding-left: 0%;
+}
+.jv{
+	text-align: center;
+	margin-left: 200px;
+	padding-top: 50px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+#name{
+	background: url("../img/bt_bg.png")no-repeat;
+	width: 400px;
+	height: 300px;
+	margin-left: 20%;
+	margin-top: 50px;
+	font-size: 65px;
+	/* font-family:华文彩云; */
+	font-family:华文行楷;
+	 text-shadow:5px 0px 0px rgb(135, 8, 10); 
+}
+
+.tac{
+	border-collapse:collapse;
+	border: none;
+	
+}
+.btn1{
+	border: none;
+	border-radius:5px 5px 5px 5px;
+	width: 100px;
+	height: 30px;
+}
+.btn2{
+	border: none;
+	border-radius:5px 5px 5px 5px;
+	width: 100px;
+	height: 30px;
+}
+li:hover{
+	color: darkorange;
+	
+}
+#datu{
+	background: url(../img/datu.png)no-repeat;
+	height: 310px;
+	width: 1000px;
+	
+}
+
